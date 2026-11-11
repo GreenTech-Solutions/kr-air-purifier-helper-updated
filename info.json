@@ -1,0 +1,22 @@
+{
+    "name": "kr-air-purifier-helper",
+    "title": "Krastorio 2 - air purifier helper",
+    "description": "Restocks air purifiers using construction robots.",
+    "version": "2.0.6",
+    "author": "Quezler",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "? newsletter-for-mods-made-by-quezler",
+
+        "base >= 2.0.46",
+
+        "Krastorio2Assets",
+
+        "? Krastorio2",
+        "? Krastorio2-spaced-out",
+        "? k2-air-purifier",
+        "? KrastorioAirPurifier",
+        
+        "(?) platform-construction-only-no-construction-robots"
+    ]
+}
