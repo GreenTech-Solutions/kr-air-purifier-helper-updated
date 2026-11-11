@@ -1,6 +1,6 @@
 name: Portal details
 
-# Sets the mod portal page from tools/portal/: gh workflow run portal.yml
+# Sets the mod portal page from tools/portal/: gh workflow run portal.yml -R GreenTech-Solutions/kr-air-purifier-helper-updated
 on:
   workflow_dispatch:
 
