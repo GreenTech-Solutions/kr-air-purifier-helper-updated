@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+  "runtime": {
+    "version": "Lua5.2",
+    "requirePattern": [
+      "?.lua",
+      "?/init.lua"
+    ]
+  },
+  "strict": {
+    "arrayIndex": false
+  },
+  "workspace": {
+    "ignoreGlobs": [
+      "node_modules/**"
+    ]
+  },
+  "diagnostics": {
+    "disable": [
+      "unnecessary-if",
+      "global-in-non-module",
+      "unresolved-require",
+      "assign-type-mismatch",
+      "need-check-nil",
+      "duplicate-index",
+      "unnecessary-assert",
+      "param-type-mismatch",
+      "undefined-field"
+    ],
+    "globals": [
+      "mod_name",
+      "mod_prefix",
+      "mod_directory"
+    ]
+  }
+}
