@@ -1,4 +1,5 @@
 require("shared")
+local migrated_storage = require("migrated_storage")
 
 -- we depend on this recipe being default
 assert( prototypes.recipe["wooden-chest"])
@@ -30,7 +31,20 @@ end
 
 local mod = {}
 
+-- A save that had the original mod (migrates_from in info.json) keeps its hidden surface, named after that mod, with a
+-- proxy container and an assembling machine for every purifier. This mod builds its own on its own surface below, so the
+-- old surface goes away with everything on it.
+local function drop_original_storage()
+  local old = migrated_storage.take({"kr-air-purifier-helper"})
+  local surface = old and old.surface
+  if surface and surface.valid and surface ~= storage.surface then
+    log("Deleting the surface " .. surface.name .. " of the original kr-air-purifier-helper")
+    game.delete_surface(surface)
+  end
+end
+
 script.on_init(function()
+  drop_original_storage()
   storage.surface = game.planets[mod_name].create_surface()
   storage.surface.generate_with_lab_tiles = true
 
