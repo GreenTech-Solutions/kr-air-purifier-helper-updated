@@ -16,5 +16,6 @@
     "? KrastorioAirPurifier",
     "(?) platform-construction-only-no-construction-robots",
     "! kr-air-purifier-helper"
-  ]
+  ],
+  "migrates_from": ["kr-air-purifier-helper"]
 }
