@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2026-11-13
+  Features:
+    - a save with the original air purifier helper switches to this mod without leftovers on the original's hidden surface ([#1](https://github.com/GreenTech-Solutions/kr-air-purifier-helper-updated/issues/1))
+---------------------------------------------------------------------------------------------------
 Version: 2.1.0
 Date: 2026-11-11
   Info:

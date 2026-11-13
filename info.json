@@ -2,7 +2,7 @@
   "name": "kr-air-purifier-helper-updated",
   "title": "Krastorio 2 - air purifier helper (2.1)",
   "description": "Restocks air purifiers using construction robots.\nKrastorio 2 - air purifier helper by Quezler, updated for Factorio 2.1.",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Quezler, updated by Alex Green",
   "homepage": "https://github.com/GreenTech-Solutions/kr-air-purifier-helper-updated",
   "factorio_version": "2.1",
@@ -17,5 +17,7 @@
     "(?) platform-construction-only-no-construction-robots",
     "! kr-air-purifier-helper"
   ],
-  "migrates_from": ["kr-air-purifier-helper"]
+  "migrates_from": [
+    "kr-air-purifier-helper"
+  ]
 }
